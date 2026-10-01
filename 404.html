@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, follow">
+<title>Redirecting to teenyoun.com</title>
+<script>
+(function () {
+  var p = location.pathname + location.search + location.hash;
+  var url = "https://teenyoun.com" + p;
+  document.write('<meta http-equiv="refresh" content="0; url=' + url + '">');
+  location.replace(url);
+})();
+</script>
+</head>
+<body>
+<p>This page has moved to <strong>teenyoun.com</strong>.</p>
+<p><a id="go" href="https://teenyoun.com/">Continue to teenyoun.com</a></p>
+<script>document.getElementById('go').href = "https://teenyoun.com" + location.pathname + location.search;</script>
+</body>
+</html>
